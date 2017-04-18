@@ -1,0 +1,118 @@
+[Defines]
+  INF_VERSION                 = 0x00010016
+  BASE_NAME                   = CurlLib
+  FILE_GUID                   = ca5627c4-51ba-4dcb-ac62-c076ebd37ddb
+  MODULE_TYPE                 = BASE
+  VERSION_STRING              = 1.0
+  LIBRARY_CLASS               = CurlLib
+
+  DEFINE VERSION              = 1.00
+
+[Packages]
+  StdLib/StdLib.dec
+  MdePkg/MdePkg.dec
+  CryptoPkg/CryptoPkg.dec
+
+[LibraryClasses]
+  UefiLib
+  OpensslLib
+  LibC
+  LibString
+  LibStdio
+
+[Sources]
+  curl/lib/vauth/cleartext.c
+  curl/lib/vauth/cram.c
+  curl/lib/vauth/digest.c
+  curl/lib/vauth/digest_sspi.c
+  curl/lib/vauth/ntlm.c
+  curl/lib/vauth/ntlm_sspi.c
+  curl/lib/vauth/oauth2.c
+  curl/lib/vauth/sppnego_gssapi.c
+  curl/lib/vauth/spnego_sspi.c
+  curl/lib/vauth/vauth.c
+  curl/lib/vtls/openssl.c
+  curl/lib/vtls/vtls.c
+  curl/lib/asyn-ares.c
+  curl/lib/asyn-thread.c
+  curl/lib/base64.c
+  curl/lib/conncache.c
+  curl/lib/connect.c
+  curl/lib/content_encoding.c
+  curl/lib/cookie.c
+  curl/lib/curl_addrinfo.c
+  curl/lib/curl_des.c
+  curl/lib/curl_endian.c
+  curl/lib/curl_fnmatch.c
+  curl/lib/curl_gethostname.c
+  curl/lib/curl_gssapi.c
+  curl/lib/curl_memrchr.c
+  curl/lib/curl_multibyte.c
+  curl/lib/curl_ntlm_core.c
+  curl/lib/curl_ntlm_wb.c
+  curl/lib/curl_rtmp.c
+  curl/lib/curl_sasl.c
+  curl/lib/curl_threads.c
+  curl/lib/dict.c
+  curl/lib/dotdot.c
+  curl/lib/easy.c
+  curl/lib/escape.c
+  curl/lib/file.c
+  curl/lib/fileinfo.c
+  curl/lib/formdata.c
+  curl/lib/getenv.c
+  curl/lib/getinfo.c
+  curl/lib/gopher.c
+  curl/lib/hash.c
+  curl/lib/hmac.c
+  curl/lib/hostasync.c
+  curl/lib/hostcheck.c
+  curl/lib/hostip.c
+  curl/lib/hostip4.c
+  curl/lib/hostip6.c
+  curl/lib/hostsyn.c
+  curl/lib/http.c
+  curl/lib/http_chunks.c
+  curl/lib/http_digest.c
+  curl/lib/http_proxy.c
+  curl/lib/http2.c
+  curl/lib/if2ip.c
+  curl/lib/inet_ntop.c
+  curl/lib/llist.c
+  curl/lib/md4.c
+  curl/lib/md5.c
+  curl/lib/mprintf.c
+  curl/lib/multi.c
+  curl/lib/netrc.c
+  curl/lib/non-ascii.c
+  curl/lib/nonblock.c
+  curl/lib/parsedate.c
+  curl/lib/pingpong.c
+  curl/lib/pipeline.c
+  curl/lib/progress.c
+  curl/lib/rand.c
+  curl/lib/rtsp.c
+  curl/lib/select.c
+  curl/lib/sendf.c
+  curl/lib/share.c
+  curl/lib/slist.c
+  curl/lib/socks.c
+  curl/lib/socks_gssapi.c
+  curl/lib/sock_sspi.c
+  curl/lib/splay.c
+  curl/lib/strcase.c
+  curl/lib/strdup.c
+  curl/lib/strerror.c
+  curl/lib/strtok.c
+  curl/lib/strtoofft.c
+  curl/lib/telnet.c
+  curl/lib/timeval.c
+  curl/lib/transfer.c
+  curl/lib/url.c
+  curl/lib/version.c
+  curl/lib/warnless.c
+  curl/lib/wildcard.c
+  curl/lib/x509asn1.c
+
+[Includes]
+  curl/lib/

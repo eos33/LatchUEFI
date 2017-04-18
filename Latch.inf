@@ -16,6 +16,7 @@
 [LibraryClasses]
   UefiLib
   OpensslLib
+  CurlLib
   LibC
   LibString
   LibStdio
@@ -25,7 +26,11 @@
   Source/Main.c
 
 [BuildOptions]
-  MSFT:*_*_IA32_CC_FLAGS          =
-  MSFT:*_*_X64_CC_FLAGS           =
-  GCC:*_*_IA32_CC_FLAGS           =
-  GCC:*_*_X64_CC_FLAGS            =
+    MSFT:*_*_IA32_CC_FLAGS          =
+    MSFT:*_*_X64_CC_FLAGS           =
+
+    XCODE:*_*_IA32_CC_FLAGS         =
+    XCODE:*_*_X64_CC_FLAGS          =
+
+    GCC:*_*_IA32_CC_FLAGS           =
+    GCC:*_*_X64_CC_FLAGS            =
