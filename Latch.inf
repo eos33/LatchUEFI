@@ -24,3 +24,7 @@
 [Sources]
   Source/Latch.c
   Source/Main.c
+
+
+[Includes]
+  curl/include/
